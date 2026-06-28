@@ -261,9 +261,12 @@
     </button>
 
     <footer>
-      <p>&copy; 2024 Najma Abdirizak. All rights reserved.</p>
+      <p>&copy; <span id="year"></span> Najma Abdirizak. All rights reserved.</p>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
   </body>
 </html>
